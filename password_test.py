@@ -1,5 +1,5 @@
 import unittest
-from password import User
+from password import User , Credential
 
 
 class TestUser(unittest.TestCase):
@@ -77,6 +77,23 @@ class TestUser(unittest.TestCase):
         user_exists = User.user_exist("Langat")
 
         self.assertTrue(user_exists)
+
+    class TestCredential(unittest.TestCase):
+        def setUp(self):
+            '''
+            Set up method to run before each test cases.
+            '''
+            self.new_credential = Credential("Langat","twitter", "justo01","justo1234")
+
+        def test_init(self):
+            '''
+            test_init test case to test if the object is initialized properly
+            '''
+
+            self.assertEqual(self.new_credential.name,"Langat")
+            self.assertEqual(self.new_credential.account,"twitter")
+            self.assertEqual(self.new_credential.username,"justo01")
+            self.assertEqual(self.new_credential.password,"justo12345")        
 
 if __name__ == '__main__':
     unittest.main()
