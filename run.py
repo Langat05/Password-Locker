@@ -1,0 +1,9 @@
+from password import User , Credential
+
+
+def creat_user(name,username,password):
+    '''
+    Function to create a new user
+    '''
+    new_user = User(name,username,password)
+    return new_user
