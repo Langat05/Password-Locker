@@ -95,5 +95,13 @@ class TestUser(unittest.TestCase):
             self.assertEqual(self.new_credential.username,"justo01")
             self.assertEqual(self.new_credential.password,"justo12345")        
 
+        def test_save_credential(self):
+            '''
+            test_save_credential test case to test if the user object is saved into
+            the credential list
+            '''
+            self.new_credential.save_credential() # saving the new credential
+            self.assertEqual(len(Credential.credential_list),1)
+
 if __name__ == '__main__':
     unittest.main()
