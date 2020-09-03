@@ -14,3 +14,9 @@ def generate_password(user):
     Function to generate random password for user
     """
     return user.generate_random_password()      
+
+def save_users(user):
+    '''
+    Function to save user
+    '''
+    user.save_user()     
