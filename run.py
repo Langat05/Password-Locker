@@ -33,3 +33,15 @@ def create_credential(name, account, username, password):
     '''
     new_credential = Credential(name,account,username,password)
     return new_credential       
+
+def save_credential(credential):
+    '''
+    Function to save credential
+    '''
+    credential.save_credential()   
+
+def delete_credential(credential):
+    '''
+    Function to delete a credential
+    '''
+    credential.delete_credential()
