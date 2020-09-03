@@ -25,4 +25,11 @@ def del_user(user):
     '''
     Function to delete a user
     '''
-    user.delete_user()       
+    user.delete_user()     
+
+def create_credential(name, account, username, password):
+    '''
+    Function to create a new credential
+    '''
+    new_credential = Credential(name,account,username,password)
+    return new_credential       
