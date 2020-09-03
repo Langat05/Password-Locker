@@ -1,4 +1,5 @@
 from password import User , Credential
+import random
 
 
 def creat_user(name,username,password):
@@ -7,3 +8,9 @@ def creat_user(name,username,password):
     '''
     new_user = User(name,username,password)
     return new_user
+
+def generate_password(user):
+    """
+    Function to generate random password for user
+    """
+    return user.generate_random_password()      
