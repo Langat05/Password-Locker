@@ -35,7 +35,7 @@ This application enable users to store their password for different accounts for
 - No known bugs at the moment yet.
 
 ## Codebeat
-
+[![codebeat badge](https://codebeat.co/badges/63412e47-559b-414b-9b66-a0c5b43d8a11)](https://codebeat.co/projects/github-com-langat05-password-locker-master)
 
 ## License
 licensed under [MIT license](license).
