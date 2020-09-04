@@ -2,6 +2,7 @@ from password import User , Credential
 import random
 import getpass
 import string
+import uuid
 
 
 def creat_user(name,username,password):
@@ -94,7 +95,31 @@ def main():
             if short_code == "cc": 
                 print("Create new account")
                 print("-"*12)  
-                
-                                 
+
+                print("Enter your name(s)")
+                name = input("> ")
+
+                print("Enter account for example instagram, facebook or twitter....")
+                account = input("> ")
+
+                print("Enter your preffered username")
+                username = input("> ")
+
+                print("Enter password")
+                password = ("> ")
+
+                save_credential(create_credential(name, account, username, password))
+
+                print("\n")
+                print(f"New credential Nam:{name}, account:{account}, and password:{password} have been created")
+                print("\n")
+
+            elif short_code == "rp":
+                print("Please enter the account you wantto generate password for > ")
+                account = input("Enter accounttype > ")
+
+
+
+
                                 
                
