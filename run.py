@@ -1,5 +1,7 @@
 from password import User , Credential
 import random
+import getpass
+import string
 
 
 def creat_user(name,username,password):
@@ -63,3 +65,17 @@ def display_credentials():
     Function that returns all the saved credentials
     '''
     return Credential.display_credentials()  
+
+def main():
+    print("What is your name?")
+    name = input()
+
+    ask = input(f"{name} Do you have an account? yes or no >")
+
+    if ask == "no":
+        print("Signup now")
+        username = input(f"{username}. Do you want the system to generate password for you? yes or no >")
+        if create == "no":
+            print("create your password then")
+            getpass.getpass()
+            print("Sign in successfull")
