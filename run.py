@@ -70,12 +70,31 @@ def main():
     print("What is your name?")
     name = input()
 
-    ask = input(f"{name} Do you have an account? yes or no >")
+    ask = input(f"{name} Do you have an account? yes or no > ")
 
     if ask == "no":
         print("Signup now")
-        username = input(f"{username}. Do you want the system to generate password for you? yes or no >")
+        username = input(f"{username}. Do you want the system to generate password for you? yes or no > ")
         if create == "no":
             print("create your password then")
             getpass.getpass()
             print("Sign in successfull")
+
+        while True:
+            print("""
+            Use the short codes: cc to create new credential
+                                 dc to display credentials
+                                 fc to find credential
+                                 dl to delete credential
+                                 rp to generate random password
+                                 ex to exit
+                                 """)
+
+            short_code == input ("Navicate now using the short codes > ")
+            if short_code == "cc": 
+                print("Create new account")
+                print("-"*12)  
+                
+                                 
+                                
+               
